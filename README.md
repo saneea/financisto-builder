@@ -1,2 +1,2 @@
 # financisto-builder
-Docker image based on Ubuntu for 'Financisto' apk building
+Docker image based on Ubuntu for financisto apk building
