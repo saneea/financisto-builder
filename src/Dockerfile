@@ -3,8 +3,7 @@ from ubuntu:22.04
 run apt-get -y update
 run apt-get -y install vim
 run apt-get -y install curl
-run apt-get -y install openjdk-8-jdk
-run apt-get -y install openjdk-11-jdk
+run apt-get -y install openjdk-17-jdk
 run apt-get -y install git
 run apt-get -y install wget
 run apt-get -y install unzip
@@ -22,9 +21,10 @@ run yes | sdkmanager --licenses
 
 workdir /home
 
-run git clone https://github.com/saneea/financisto.git
-workdir /home/financisto
+run git clone https://github.com/saneea/financisto1-holo.git
+workdir /home/financisto1-holo
 
 #add '-x test' to exclude tests
-run ./gradlew clean build
+#add '-x lintDebug' to exclude linting
+#run ./gradlew clean build
 
